@@ -1,4 +1,4 @@
-package br.bdc.api.listar;
+package br.dbc.api.listar;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import io.restassured.RestAssured;
 
 public class ListarUsuario {
+	
 	@BeforeAll
 	public static void setup() {
 		RestAssured.baseURI = "https://reqres.in/api";

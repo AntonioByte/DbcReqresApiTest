@@ -1,4 +1,4 @@
-package br.bdc.api.listar;
+package br.dbc.api.listar;
 
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeAll;
@@ -51,8 +51,7 @@ public class ListarUsuarios {
 			.log().all()
 			.statusCode(200)
 			.body("per_page", Matchers.is(6))
-			.body("data", Matchers.hasSize(6))
-			;
+			.body("data", Matchers.hasSize(6));
 	}
 	
 	@Test
